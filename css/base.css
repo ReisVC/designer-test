@@ -1,8 +1,8 @@
 body {
   font-family: 'Playfair', sans-serif;
-  background-image: url('../img/pexels-rfera-432059.jpg');
+  background-image: url('../img/bg2.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   color: black;
 }
 
@@ -32,9 +32,16 @@ header {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 10vh;
     padding: 20px;
+    gap: 30px;
+    margin-top: 300px;
     background-color: var(--color-primary); 
+}
+
+footer img {
+    height: 100%;
 }
 
 :root {

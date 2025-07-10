@@ -20,40 +20,74 @@
         </nav>
     </header>
     <main>
-        <section class="about" data-aos="fade-right" data-aos-duration="2000">
-            <h1>Hello, my name's Louis Armani.</h1>
-            <p>A famous fashion designer from west coast of America...</p>
+        <section class="about" >
+            <img src="img/silhueta - Copia.jpg">
+            <div class="present-container">
+                <h1 id="titulo1" data-aos="fade-right"></h1>
+                <p id="titulo2" data-aos="fade-right"></p>
+            </div>
+            <!-- <h1 id="titulo1"></h1>
+            <p id="titulo2"></p> -->
         </section>
-        <section class="projects">
-            <div class="cards">
+        <section class="projects" >
+            <div class="cards" data-aos="fade-left" data-aos-duration="1500">
                 <img src="https://img.veaul.com/catalog/product/3/4/342a1009/simg/moda-blanco-con-encaje-flor-mariposa-apliques-pluma-vestidos-de-gala-2024-a-line-princess-scoop-escote-sin-mangas-sin-espalda-largos-gala-vestidos-for.jpg" alt="">
                 <h1>Neon Roots</h1>
                 <p>A collection that blends elements of Amazonian Indigenous fashion with fluorescent tech fabrics. The goal is to explore the connection between tradition and the future.</p>
             </div>
-            <div class="cards">
+            <div class="cards" data-aos="fade-left" data-aos-duration="2000">
                 <img src="https://img.veaul.com/catalog/product/3/4/342a0988/simg/moda-champan-perla-rhinestone-con-encaje-flor-lentejuelas-mariposa-vestidos-de-gala-2024-a-line-princess-scoop-escote-pluma-sin-mangas-sin-espalda.jpg@600w.jpg" alt="">
                 <h1>CyberGaia</h1>
                 <p>Dresses 3D-printed using recyclable materials inspired by nature and futuristic video game aesthetics. Designed for virtual runways and avatars.</p>
             </div>
-            <div class="cards">
+            <div class="cards" data-aos="fade-left" data-aos-duration="2500">
                 <img src="https://img.veaul.com/catalog/product/1/_/1_106_77/simg/hermoso-vestidos-de-gala-2017-ball-gown-con-encaje-flor-flores-artificiales-mariposa-perla-scoop-escote-manga-corta-largos-vestidos-formales.jpg@600w.jpg" alt="">
                 <h1>Vortex</h1>
                 <p>A conceptual study of garments for use in zero-gravity environments, like space stations. Features magnetic fabrics and seamless construction.</p>
             </div>
-            <div class="cards">
+            <div class="cards" data-aos="fade-left" data-aos-duration="3000">
                 <img src="https://i.etsystatic.com/11270536/r/il/bcfaf4/6526759076/il_1080xN.6526759076_elm8.jpg" alt="">
                 <h1>Re-Vero</h1>
                 <p>Garments made entirely from leftover industrial uniforms. The collection aims to dress young people from underserved areas with style and environmental awareness.</p>
             </div>
         </section>
+        <section class="grateful">
+            <h1>Thanks</h1>
+        </section>
     </main>
     <footer>
         <img src="https://cdn-icons-png.flaticon.com/512/6365/6365923.png" alt="">
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://reddit.com">Reddit</a>
+        <a href="https://facebook.com">Facebook</a>
+
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    function escreverTexto(texto, elemento, delay = 100, callback) {
+      let i = 0;
+      function escrever() {
+        if (i < texto.length) {
+          elemento.textContent += texto.charAt(i);
+          i++;
+          setTimeout(escrever, delay);
+        } else if (callback) {
+          callback(); // Chama a próxima função depois que terminar
+        }
+      }
+      escrever();
+    }
+
+    const titulo1 = document.getElementById("titulo1");
+    const titulo2 = document.getElementById("titulo2");
+
+    escreverTexto("Hello, my name's Louis Armani.", titulo1, 35, () => {
+      escreverTexto("A famous fashion designer from west coast of America...", titulo2, 50);
+    });
+  </script>
+<script src="js/index.js"></script>
 </body>
 </html>
