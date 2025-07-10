@@ -1,0 +1,39 @@
+@media (max-width: 860px) {
+    .material-symbols-outlined {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        height: 1900px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 50%;
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 870px) and (max-width: 999px) {
+    main {
+        margin-bottom: 400px;
+    }
+}
+
+@media (max-width: 1114px) and (min-width: 1000px) {
+    main {
+        margin-bottom: 200px;
+    }
+}
+@media (max-width: 1115px) {
+    main {
+        margin-bottom: 200px;
+    }
+}

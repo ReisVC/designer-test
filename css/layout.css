@@ -1,0 +1,79 @@
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+header img:hover {
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    font-size: large;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: rgb(30, 88, 30);
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
+
+nav .active {
+        height: 100%;
+        background-color: red;
+}
+
+main {
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+.about{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-primary);
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.about p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 24px;
+    font-style: oblique;
+}
+
+.about * {
+    text-shadow: 0px 10px 10px black;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards:hover {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--color-primary);
+
+}
+
+.projects h1 {
+    text-align: right;
+}
+
+.projects p {
+    text-align: right;
+}
+

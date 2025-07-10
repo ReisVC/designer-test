@@ -1,0 +1,58 @@
+body {
+  font-family: 'Playfair', sans-serif;
+  background-image: url('../img/pexels-rfera-432059.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  color: black;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 20px;
+    background-color: var(--color-primary);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding: 20px;
+    background-color: var(--color-primary); 
+}
+
+:root {
+    --font-standart: 'Playfair', serif;
+    --font-title: 'Cormorant', serif;
+    --color-primary: rgb(238, 238, 238);
+}
+
+h1 {
+    font-family: var(--font-standart);
+    font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.material-symbols-outlined {
+  display: none;
+} 
