@@ -1,8 +1,7 @@
-@media (max-width: 860px) {
+@media (max-width: 860px) and (min-width: 466px) {
     .material-symbols-outlined {
         display: flex;
     }
-
 
     nav {
         display: none;
@@ -13,7 +12,7 @@
     }
 
     main {
-        height: 80%;
+        height: 80%;      
     }
 
     .about {
@@ -28,6 +27,7 @@
         align-items: center;
         flex-direction: column;
         margin-top: 1000px;
+        gap: 100px;
     }
 
     .cards {
@@ -46,6 +46,7 @@
         display: flex;
         margin-top: 1000px;
         width: 80vw;
+        margin-left: 10vw;
         justify-content: center;
         align-items: center;
     }
@@ -58,6 +59,85 @@
 
     footer {
         margin-top: 2200px;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 465px) {
+    .material-symbols-outlined {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        height: 2000px;
+    }
+
+    main {
+        height: 80%;      
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .projects {
+        background-color: transparent;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1050px;
+        gap: 120px;
+        animation: none;
+    }
+
+    .cards {
+        width: 70%;
+        height: auto;
+        background-color: transparent;
+        margin-bottom: 160px;
+    }  
+
+    .cards:hover {
+        transform: none;
+        animation: none;
+        transition: none;
+        cursor: default;
+    }
+
+    .projects:has(.cards:hover) {
+        animation: none;
+        transition: none;
+        height: 500px;
+    }
+
+    .cards * {
+        color: white;
+        text-shadow: 0px 10px 10px black;
+    }
+
+    .grateful {
+        display: flex;
+        margin-top: 1050px;
+        width: 80vw;
+        margin-left: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grateful h1 {
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: 2300px;
         bottom: 0;
     }
 }

@@ -108,18 +108,42 @@ main {
     padding: 40px;
     height: 400px;
     background-color: var(--color-primary);
+    animation: down-height 1s ease;
+}
+
+@keyframes up-height {
+    from{height: 400px;}
+    to{height: 450px;}
+}
+
+@keyframes down-height {
+    from{height: 450px;}
+    to{height: 400px;}
+}
+
+.projects:has(.cards:hover) {
+    animation: up-height .2s ease;
+    height: 450px;
 }
 
 .projects .cards:hover {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease, box-shadow 0.1s ease;
     transform: scale(1.1);
+    z-index: 999;
 }
 
-.cards:hover {
-    transition: transform 0.5s ease, box-shadow 0.1s ease;
-    transform: scale(1.2);
-    box-shadow: 0px 0px 30px var(--color-primary);   
-    z-index: 999;
+/** Cores da sombra dos cards */
+#d1:hover {
+    box-shadow: 0px 10px 30px var(--color-one);   
+}
+#d2:hover {
+    box-shadow: 0px 10px 40px var(--color-two);   
+}
+#d3:hover {
+    box-shadow: 0px 10px 20px var(--color-three);   
+}
+#d4:hover {
+    box-shadow: 0px 10px 30px var(--color-four);   
 }
 
 .projects h1 {

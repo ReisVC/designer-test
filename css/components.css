@@ -2,6 +2,7 @@
     background-color: var(--color-primary);
     height: 30vh;
     width: 15vw;
+    z-index: 999;
 }
 
 .cards img {

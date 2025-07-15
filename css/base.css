@@ -48,6 +48,10 @@ footer img {
     --font-standart: 'Playfair', serif;
     --font-title: 'Cormorant', serif;
     --color-primary: rgb(238, 238, 238);
+    --color-one: rgb(163, 163, 163);
+    --color-two: #d6ad79;
+    --color-three: #d3baab;
+    --color-four: #90bada;
 }
 
 h1 {
