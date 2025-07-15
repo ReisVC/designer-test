@@ -97,7 +97,7 @@
     }
 
     .cards {
-        width: 70%;
+        width: 90%;
         height: auto;
         background-color: transparent;
         margin-bottom: 160px;
@@ -131,7 +131,7 @@
     }
 
     .grateful h1 {
-        font-size: 40px;
+        font-size: 28px;
         justify-content: center;
         align-items: center;
     }
