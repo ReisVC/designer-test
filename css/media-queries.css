@@ -68,6 +68,10 @@
         display: flex;
     }
 
+    header {
+        width: 100%;
+    }
+
     nav {
         display: none;
     }
@@ -83,6 +87,7 @@
     .about {
         flex-direction: column;
         padding: 20px;
+        width: 100%;
     }
 
     .projects {
@@ -92,12 +97,12 @@
         align-items: center;
         flex-direction: column;
         margin-top: 1050px;
-        gap: 120px;
+        gap: 140px;
         animation: none;
     }
 
     .cards {
-        width: 90%;
+        width: 80%;
         height: auto;
         background-color: transparent;
         margin-bottom: 120px;
