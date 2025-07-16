@@ -106,9 +106,8 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     padding: 40px;
-    height: 400px;
+    height: 500px;
     background-color: var(--color-primary);
-    animation: down-height 1s ease;
 }
 
 @keyframes up-height {
@@ -121,16 +120,6 @@ main {
     to{height: 400px;}
 }
 
-.projects:has(.cards:hover) {
-    animation: up-height .2s ease;
-    height: 450px;
-}
-
-.projects .cards:hover {
-    transition: transform 0.5s ease, box-shadow 0.1s ease;
-    transform: scale(1.1);
-    z-index: 999;
-}
 
 /** Cores da sombra dos cards */
 #d1:hover {
