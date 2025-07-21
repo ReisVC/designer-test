@@ -109,7 +109,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 1050px;
+        margin-top: 1150px;
         gap: 140px;
         animation: none;
     }
@@ -156,7 +156,7 @@
 
     footer {
         width: 100%;
-        margin-top: 2600px;
+        margin-top: 2700px;
         bottom: 0;
     }
 
@@ -197,9 +197,13 @@
     }
 }
 
-@media (max-width: 1114px) and (min-width: 1000px) {
+@media (max-width: 1400px) and (min-width: 1000px) {
     main {
         margin-bottom: 200px;
+    }
+
+    .projects {
+        padding: 50px;
     }
 }
 
