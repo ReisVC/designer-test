@@ -155,3 +155,17 @@ main {
     font-size: 60px;
     text-shadow: 0px 10px 10px black;
 }   
+
+#carouselExample h5 {
+    color: white;
+    text-shadow: 0px 10px 10px black;
+    font-size: 32px;
+    border-style: solid red 2px;
+}
+
+#carouselExample p {
+    color: white;
+
+    text-shadow: 0px 10px 10px black;
+    font-size: 18px;
+}
